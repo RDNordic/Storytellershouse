@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact - The Storyteller’s House</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="fade-in">
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">The Storyteller’s House</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="container">
+    <section class="contact">
+      <h1>Get in Touch</h1>
+      <p>
+        Have a question, a story idea, or just want to say hello? Feel free to reach out!
+      </p>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+  
+        <button type="submit" class="cta-button">Submit</button>
+      </form>
+      <div class="social-media">
+        <a href="#" title="Bluesky">🐦 Bluesky</a>
+        <a href="#" title="YouTube">🎥 YouTube</a>
+        <a href="#" title="Spotify">🎧 Spotify</a>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 The Storyteller’s House. All rights reserved.</p>
+  </footer>
+  
+  <script>
+    // Simple form handler
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message!');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
