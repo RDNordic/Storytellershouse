@@ -20,74 +20,99 @@ body {
   padding: 0;
 }
 
-header, footer {
-  background-color: var(--primary-color);
+/* Hero banner section */
+.hero {
+  background-image: url('Images/Banner Storyteller’s House.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   color: #fff;
-  text-align: center;
-  padding: 1rem 0;
+  padding: 0 1rem;
 }
 
-nav {
-  background-color: var(--secondary-color);
-  text-align: center;
-  padding: 0.5rem 0;
-}
-
-nav a {
-  color: var(--primary-color);
+/* Call-to-action button in hero */
+.cta-button {
+  background-color: var(--highlight-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
   text-decoration: none;
-  margin: 0 15px;
+  font-family: var(--font-accent);
+  border-radius: 4px;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+/* Sticky navigation bar */
+.main-nav {
+  position: sticky;
+  top: 0;
+  /* use the Logo file instead of the cabin */
+  background-image: url('Images/Logo Storytellers House.jpg');
+  background-size: contain;      /* make sure the logo fits without overflowing */
+  background-repeat: no-repeat;  /* don’t tile it */
+  background-position: center;   /* center it horizontally */
+  padding: 1rem 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo in nav */
+.nav-logo {
+  height: 40px;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--background-color);
   font-weight: bold;
   font-family: var(--font-accent);
 }
 
-nav a:hover {
+.main-nav a:hover {
   color: var(--link-hover);
 }
 
-main {
+/* Main content container */
+.container {
   max-width: 800px;
-  margin: auto;
-  padding: 2rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
-h1, h2, h3 {
-  color: var(--primary-color);
-  font-family: var(--font-main);
-}
-
+/* Footer styling */
 footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
   font-size: 0.9rem;
 }
 
-/* Optional fantasy touch */
-header::after {
-  content: "";
-  display: block;
-  height: 5px;
-  background: linear-gradient(to right, var(--secondary-color), var(--highlight-color));
-  margin-top: 5px;
-}
-
-/* Buttons (if needed) */
-button {
-  background-color: var(--highlight-color);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-family: var(--font-accent);
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: var(--link-hover);
-}
-
-/* For images or videos */
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+/* Remove generic header styles to avoid conflict with hero */
+header:not(.hero) {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
 }
