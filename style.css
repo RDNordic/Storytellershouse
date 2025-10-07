@@ -114,3 +114,33 @@ footer {
   font-size: 0.9rem;
   margin-top: 3rem;
 }
+
+footer a {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: var(--highlight-color);
+}
+
+.privacy h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.privacy h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  color: var(--primary-color);
+}
+
+.privacy p,
+.privacy ul {
+  margin-bottom: 1rem;
+}
+
+.privacy ul {
+  padding-left: 1.5rem;
+  list-style: disc;
+}
