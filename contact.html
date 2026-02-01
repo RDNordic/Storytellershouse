@@ -28,22 +28,13 @@
       <p>
         Have a question, a story idea, or just want to say hello? Feel free to reach out!
       </p>
-      <form class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-  
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-  
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-  
-        <button type="submit" class="cta-button">Submit</button>
-      </form>
+      <p class="email-contact">
+        <a href="mailto:storytellershouse@pm.me" class="cta-button">storytellershouse@pm.me</a>
+      </p>
       <div class="social-media">
-        <a href="#" title="Bluesky">🐦 Bluesky</a>
-        <a href="#" title="YouTube">🎥 YouTube</a>
-        <a href="#" title="Spotify">🎧 Spotify</a>
+        <a href="https://bsky.app/profile/storytellershouse.bsky.social" target="_blank" rel="noopener" title="Bluesky">🐦 Bluesky</a>
+        <a href="https://www.youtube.com/channel/UCnk8NejTDyMqCywfLz0bTQw" target="_blank" rel="noopener" title="YouTube">🎥 YouTube</a>
+        <a href="https://open.spotify.com/show/1oAARsbfiX9gPGiWvpSNmr?si=0d504d5ff92143af" target="_blank" rel="noopener" title="Spotify">🎧 Spotify</a>
       </div>
     </section>
   </main>
@@ -54,13 +45,5 @@
     </p>
   </footer>
 
-  <script>
-    // Simple form handler
-    document.querySelector('.contact-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Thank you for your message!');
-      this.reset();
-    });
-  </script>
 </body>
 </html>
