@@ -3,62 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stories &amp; Adventures – The Storyteller’s House</title>
-  <!-- Google Fonts -->
+  <title>Stories - The Storyteller's House</title>
+  <meta name="description" content="Explore our podcast series: Axel & Annabel fairy tales, Bedtime Stories, and Little Boy Silvi. Available on Spotify and YouTube.">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="fade-in">
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="index.html">The Storyteller’s House</a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="stories.html">Stories</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">The Storyteller's House</a>
+    </div>
+    <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="stories.html">Stories</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
   <main class="container">
     <section class="stories">
-      <h1>Stories &amp; Adventures</h1>
-      <p>
-        Here, you’ll find the latest stories from The Storyteller’s House. Some are part of longer adventures, others are standalone tales, but all of them are filled with wonder.
-      </p>
+      <h1>Our Story Series</h1>
+      <p>Choose your adventure! Each series offers something unique—from epic fairy tales to soothing bedtime stories. Find your new favorite below.</p>
 
-      <ul class="story-links">
-        <li>
-          <a href="https://open.spotify.com/show/1oAARsbfiX9gPGiWvpSNmr?si=0d504d5ff92143af" target="_blank" rel="noopener">
-            🎧 The Storyteller’s House: Bedtime Stories on Spotify
-          </a>
-        </li>
-        <li>
-          <a href="https://open.spotify.com/show/4Blt9brRWzN7h3Y1wh9hU0?si=7b80a91e465f43e4" target="_blank" rel="noopener">
-            🚀 The Storyteller’s House: Axel &amp; Annabel on Spotify
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/channel/UCnk8NejTDyMqCywfLz0bTQw" target="_blank" rel="noopener">
-            📺 The Storyteller’s House YouTube Channel
-          </a>
-        </li>
-        <li>
-          <a href="https://bsky.app/profile/storytellershouse.bsky.social" target="_blank" rel="noopener">
-            🐦 The Storyteller’s House on Bluesky
-          </a>
-        </li>
-      </ul>
+      <div class="series-grid">
+        <article class="series-card fairy-tales">
+          <div class="series-icon">
+            <i class="fas fa-crown"></i>
+          </div>
+          <h3>Axel &amp; Annabel</h3>
+          <p>An epic fairy tale adventure series following two siblings as they discover magical lands, encounter extraordinary creatures, and uncover their destiny. Perfect for young adventurers who love quests, magic, and sibling bonds.</p>
+          <div class="listen-links">
+            <a href="https://open.spotify.com/show/4Blt9brRWzN7h3Y1wh9hU0?si=7b80a91e465f43e4" target="_blank" rel="noopener" class="listen-link">
+              <i class="fab fa-spotify"></i> Spotify
+            </a>
+            <a href="https://www.youtube.com/channel/UCnk8NejTDyMqCywfLz0bTQw" target="_blank" rel="noopener" class="listen-link">
+              <i class="fab fa-youtube"></i> YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="series-card bedtime">
+          <div class="series-icon">
+            <i class="fas fa-moon"></i>
+          </div>
+          <h3>Bedtime Stories</h3>
+          <p>Gentle, soothing tales designed to help little ones wind down and drift off to dreamland. Each story is carefully crafted to be calming yet engaging—the perfect end to any day.</p>
+          <div class="listen-links">
+            <a href="https://open.spotify.com/show/1oAARsbfiX9gPGiWvpSNmr?si=0d504d5ff92143af" target="_blank" rel="noopener" class="listen-link">
+              <i class="fab fa-spotify"></i> Spotify
+            </a>
+            <a href="https://www.youtube.com/channel/UCnk8NejTDyMqCywfLz0bTQw" target="_blank" rel="noopener" class="listen-link">
+              <i class="fab fa-youtube"></i> YouTube
+            </a>
+          </div>
+        </article>
+
+        <article class="series-card silvi">
+          <div class="series-icon">
+            <i class="fas fa-child"></i>
+          </div>
+          <h3>Little Boy Silvi</h3>
+          <p>Join Silvi, a curious and kind-hearted little boy, as he discovers that magic can be found in the most ordinary places. Heartwarming stories about friendship, curiosity, and finding wonder in everyday life.</p>
+          <div class="listen-links">
+            <a href="#" class="listen-link">
+              <i class="fas fa-clock"></i> Coming Soon
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <section class="section-header" style="margin-top: 4rem;">
+        <h2>Where to Listen</h2>
+        <p>Find us on your favorite platforms</p>
+      </section>
+
+      <div class="social-media">
+        <a href="https://open.spotify.com/show/1oAARsbfiX9gPGiWvpSNmr?si=0d504d5ff92143af" target="_blank" rel="noopener">
+          <i class="fab fa-spotify"></i> Spotify - Bedtime Stories
+        </a>
+        <a href="https://open.spotify.com/show/4Blt9brRWzN7h3Y1wh9hU0?si=7b80a91e465f43e4" target="_blank" rel="noopener">
+          <i class="fab fa-spotify"></i> Spotify - Axel &amp; Annabel
+        </a>
+        <a href="https://www.youtube.com/channel/UCnk8NejTDyMqCywfLz0bTQw" target="_blank" rel="noopener">
+          <i class="fab fa-youtube"></i> YouTube Channel
+        </a>
+        <a href="https://bsky.app/profile/storytellershouse.bsky.social" target="_blank" rel="noopener">
+          <i class="fas fa-cloud"></i> Bluesky
+        </a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 The Storyteller’s House. All rights reserved. |
-      <a href="privacy.html">Privacy Policy</a>
-    </p>
+    <div class="footer-content">
+      <div class="footer-social">
+        <a href="https://open.spotify.com/show/1oAARsbfiX9gPGiWvpSNmr?si=0d504d5ff92143af" target="_blank" rel="noopener" title="Spotify"><i class="fab fa-spotify"></i></a>
+        <a href="https://www.youtube.com/channel/UCnk8NejTDyMqCywfLz0bTQw" target="_blank" rel="noopener" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://bsky.app/profile/storytellershouse.bsky.social" target="_blank" rel="noopener" title="Bluesky"><i class="fas fa-cloud"></i></a>
+      </div>
+      <p>&copy; 2025 The Storyteller's House. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+    </div>
   </footer>
+
 </body>
 </html>
